@@ -1,0 +1,367 @@
+/* reset */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/* colors */
+:root {
+  --wt: #ffffff;
+  --bk: #000000;
+  --dk: #262530;
+  --bl1: #5d9dc1;
+  --bl2: #0092e4;
+  --bl3: #126c9f;
+  --gr1: #4ec87f;
+  --gr2: #45a76c;
+}
+
+/* default */
+body {
+  background-color: var(--dk);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.align {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* content */
+.jdn-content {
+  background: rgb(93, 157, 193);
+  background: linear-gradient(160deg, var(--bl1), var(--bl2));
+  min-height: 800px;
+}
+
+.jdn-content__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 550px;
+}
+
+.login-screen {
+  min-height: 350px;
+}
+
+.jdn-content__logo img {
+  height: 55px;
+}
+
+.jdn-content__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.jdn-content__buttons__primary {
+  background-color: var(--gr1);
+  border: 2px solid var(--gr1);
+  padding: 5px 10px;
+  color: var(--wt);
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.jdn-content__buttons__primary:hover {
+  background-color: var(--gr2);
+  border: 2px solid var(--gr2);
+  color: var(--wt);
+}
+
+.jdn-content__buttons__second {
+  background: none;
+  border: 2px solid var(--gr1);
+  padding: 5px 10px;
+  color: var(--gr1);
+  text-transform: uppercase;
+}
+
+.jdn-content__buttons__second:hover {
+  background-color: var(--gr1);
+  border: 2px solid var(--gr1);
+  color: var(--wt);
+}
+
+.jdn-login-form {
+  padding: 0 20px;
+}
+
+.jdn-login-form label {
+  color: var(--wt);
+  line-height: 28px;
+  padding: 0 0 20px 0;
+}
+
+.input_primary {
+  width: 100%;
+  background-color: var(--gr1);
+  color: var(--wt);
+  font-size: 1.8em;
+  font-weight: 700;
+  padding: 30px 20px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid var(--gr1);
+}
+.input_primary::placeholder {
+  color: var(--gr2);
+}
+.input_primary:-ms-input-placeholder {
+  color: var(--gr2);
+}
+.input_primary::-ms-input-placeholder {
+  color: var(--gr2);
+}
+
+.input_second {
+  width: 100%;
+  background: none;
+  color: var(--gr1);
+  font-size: 1.8em;
+  font-weight: 700;
+  padding: 30px 20px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid var(--gr1);
+  text-transform: uppercase;
+}
+.input_second::placeholder {
+  color: var(--gr1);
+}
+.input_second:-ms-input-placeholder {
+  color: var(--gr1);
+}
+.input_second::-ms-input-placeholder {
+  color: var(--gr1);
+}
+
+.submit-login {
+  background: none;
+}
+
+.submit-login img {
+  height: 60px;
+}
+
+.jdn-main-screen header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.jdn-main-screen header img {
+  max-width: 80px;
+  height: 80px;
+  padding: 10px 0;
+}
+
+.jdn-main-screen img {
+  height: 80px;
+  padding: 10px 0;
+}
+
+.jdn-main-screen p {
+  color: var(--wt);
+  text-align: left;
+  line-height: 30px;
+}
+
+.jdn-main-screen p span {
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+.jdn-main-screen .area-saldo {
+  background-color: var(--gr1);
+  color: var(--wt);
+}
+
+.jdn-main-screen .area-saldo p {
+  padding: 10px 20px 0 20px;
+}
+
+.jdn-main-screen .area-saldo .saldo {
+  padding: 0 20px 0 20px;
+  font-size: 1.2em;
+}
+
+.jdn-main-screen .area-saldo .extrato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gr2);
+  text-transform: uppercase;
+  font-size: 0.6em;
+  padding: 0 20px 0 20px;
+  color: var(--wt);
+}
+.jdn-main-screen .area-saldo .extrato:hover {
+  background-color: var(--bl3);
+  font-weight: 700;
+}
+
+.jdn-main-screen .area-saldo .extrato img {
+  height: 38px;
+}
+
+.jdn-main-screen .area-opcoes ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.jdn-main-screen .area-opcoes ul {
+  list-style: none;
+}
+
+.jdn-main-screen .area-opcoes ul a {
+  background-color: var(--bl3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.jdn-main-screen .area-opcoes ul a:hover {
+  background-color: var(--gr2);
+}
+
+.jdn-main-screen .area-opcoes ul a img {
+  height: 44px;
+}
+
+.jdn-main-screen .area-opcoes li p {
+  font-size: 0.5em;
+  text-align: center;
+  line-height: 0;
+  margin: 12px 0;
+}
+
+.jdn-main-screen .area-meus-cartoes a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gr1);
+  width: 100%;
+  color: var(--wt);
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+.jdn-main-screen .area-meus-cartoes a:hover {
+  background-color: var(--gr2);
+}
+
+.jdn-main-screen .area-meus-cartoes a i {
+  display: flex;
+  align-items: center;
+}
+
+.jdn-main-screen .area-meus-cartoes a i p {
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+.jdn-main-screen .area-meus-cartoes a i img {
+  max-width: 28px;
+  height: 40px;
+}
+
+.jdn-main-screen .area-beneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.jdn-main-screen .area-beneficios h1 {
+  color: var(--wt);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.jdn-main-screen .area-beneficios img {
+  height: 210px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gr1);
+}
+
+footer .left-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 35%;
+}
+
+footer .center-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 30%;
+}
+
+footer .right-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+footer .left-area i a img {
+  height: 40px;
+}
+
+footer .left-area .icon-home a img {
+  height: 60px;
+}
+
+footer .left-area i p {
+  font-style: normal;
+  font-size: 0.5em;
+  text-align: center;
+  line-height: 10px;
+}
+
+footer .right-area i a img {
+  height: 40px;
+}
+
+footer .right-area i p {
+  font-style: normal;
+  font-size: 0.5em;
+  text-align: center;
+  line-height: 10px;
+}
